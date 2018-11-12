@@ -1,0 +1,14 @@
+### Build ###
+/release/
+
+### Composer ###
+/composer.lock
+/vendor/
+
+### PhpStorm ###
+/.idea/
+
+### i18n ###
+/languages/
+
+/wp-content

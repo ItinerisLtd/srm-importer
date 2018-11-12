@@ -1,0 +1,70 @@
+{
+    "name": "itinerisltd/srm-importer",
+    "type": "wordpress-plugin",
+    "description": "Web UI for 10up/safe-redirect-manger importer",
+    "keywords": [
+        "safe-redirect-manager",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://github.com/ItinerisLtd/srm-importer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "composer/installers": "^1.6",
+        "typisttech/wp-better-settings": "^0.14.0"
+    },
+    "require-dev": {
+        "10up/safe-redirect-manager": "^1.9",
+        "itinerisltd/itineris-wp-coding-standards": "^0.1.0",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Itineris\\SRMImporter\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:10up/safe-redirect-manager.git"
+        }
+    ],
+    "scripts": {
+        "check-style": "phpcs --colors -p",
+        "pretag": [
+            "composer update --no-suggest",
+            "@check-style",
+            "composer normalize",
+            "doctoc README.md",
+            "github_changelog_generator --no-verbose"
+        ]
+    },
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/srm-importer/issues",
+        "source": "https://github.com/ItinerisLtd/srm-importer"
+    }
+}
