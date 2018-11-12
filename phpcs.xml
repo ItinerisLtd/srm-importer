@@ -4,6 +4,7 @@
     <exclude-pattern>/srm-importer.php</exclude-pattern>
     <exclude-pattern>/tests/*</exclude-pattern>
     <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/wp-content/*</exclude-pattern>
 
     <arg value="s"/>
     <config name="installed_paths" value="vendor/wp-coding-standards/wpcs,vendor/automattic/vipwpcs,vendor/itinerisltd/itineris-wp-coding-standards"/>

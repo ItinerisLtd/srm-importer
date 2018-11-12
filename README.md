@@ -13,6 +13,14 @@ Web UI for [10up/safe-redirect-manager](https://github.com/10up/safe-redirect-ma
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Minimum Requirements](#minimum-requirements)
+- [Installation](#installation)
+  - [Code Style](#code-style)
+- [Author Information](#author-information)
+- [Feedback](#feedback)
+- [Change log](#change-log)
+- [License](#license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Minimum Requirements
